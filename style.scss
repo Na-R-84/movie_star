@@ -1,0 +1,107 @@
+*,html {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+body{
+    background-color: black;
+}
+
+header{
+    background-color: #000000;
+    nav{
+        padding: 1rem 1rem;
+        display: flex;
+        align-items: center;
+        @media (min-width:992px) {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        img{
+            max-height: 45px;
+        }
+    }
+}
+.hero{
+    //TA BORT BG
+    // background-image: url("img/hero_desktop.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    article{
+        padding: 1rem;
+        @media (min-width:992px) {
+            max-width: 1200px;
+            margin: 0 auto;
+            flex: 0 0 100%;
+        }
+        h3{
+            font-size: 1.25rem;
+            font-weight: normal;
+            margin-bottom: .5rem;
+        }
+        h1{
+            font-size: 1.56rem;
+            margin-bottom: .5rem;
+        }
+        p{
+            font-size: 1rem;
+            @media (min-width:992px) {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+main{
+    padding: 1rem;
+    @media (min-width:992px) {
+        max-width: 1200px;
+        margin: auto;
+    }
+    h2{
+        color: white;
+    }
+    .movie-container{
+        display: flex;
+        overflow-x: scroll;
+        padding: 1.5rem 0;
+        .movie-card{
+            flex: 0 0 212px;
+            margin-right: 1rem;
+            position: relative;
+            img{
+                width: 100%;
+                display: block;
+            }
+            .overlay{
+                position: absolute;
+                background-color: rgba($color: #000000, $alpha: .8);
+                width: 100%;
+                padding: 0 1rem;
+                top: 0;
+                bottom: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transition: .8s;
+                h4{
+                    text-align: center;
+                    color: white;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                }
+            }
+            &:hover{
+                .overlay{
+                    opacity: 1;
+                }
+            }
+           
+        }
+    }
+}

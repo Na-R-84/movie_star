@@ -1,0 +1,153 @@
+*, html {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'poppins';
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  background-color: #000000;
+}
+
+header nav {
+  padding: 1rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 992px) {
+  header nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+header nav img {
+  max-height: 45px;
+}
+
+.hero {
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.hero article {
+  padding: 1rem;
+}
+
+@media (min-width: 992px) {
+  .hero article {
+    max-width: 1200px;
+    margin: 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
+.hero article h3 {
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin-bottom: .5rem;
+}
+
+.hero article h1 {
+  font-size: 1.56rem;
+  margin-bottom: .5rem;
+}
+
+.hero article p {
+  font-size: 1rem;
+}
+
+@media (min-width: 992px) {
+  .hero article p {
+    margin-bottom: 2rem;
+  }
+}
+
+main {
+  padding: 1rem;
+}
+
+@media (min-width: 992px) {
+  main {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+
+main h2 {
+  color: white;
+}
+
+main .movie-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+  padding: 1.5rem 0;
+}
+
+main .movie-container .movie-card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 212px;
+          flex: 0 0 212px;
+  margin-right: 1rem;
+  position: relative;
+}
+
+main .movie-container .movie-card img {
+  width: 100%;
+  display: block;
+}
+
+main .movie-container .movie-card .overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  padding: 0 1rem;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+main .movie-container .movie-card .overlay h4 {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+main .movie-container .movie-card:hover .overlay {
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */
